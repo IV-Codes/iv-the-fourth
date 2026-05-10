@@ -57,7 +57,7 @@
     .c-bl { bottom: 20px; left: 20px; transform: scaleY(-1); }
     .c-br { bottom: 20px; right: 20px; transform: scale(-1); }
 
-    .hud { position: fixed; z-index: 20; font-family: 'Share Tech Mono', monospace; font-size: 0.55rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); }
+    .hud { position: fixed; z-index: 20; font-family: 'Share Tech Mono', monospace; font-size: 1.1rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); }
     .hud-tl { top: 22px; left: 36px; }
     .hud-tr { top: 22px; right: 36px; }
     .hud-bl { bottom: 22px; left: 36px; }
@@ -97,7 +97,7 @@
     .progress { display: flex; gap: 4px; margin-bottom: 2rem; }
     .progress .seg { flex: 1; height: 1px; background: var(--rule); transition: background 0.4s; }
     .progress .seg.on { background: var(--navy); }
-    .sec-label { font-family: 'Share Tech Mono', monospace; font-size: 0.52rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 1.5rem; }
+    .sec-label { font-family: 'Share Tech Mono', monospace; font-size: 1.04rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 1.5rem; }
 
     .form-page { display: none; }
     .form-page.active { display: block; animation: fadeUp 0.4s ease forwards; }
@@ -105,15 +105,15 @@
     .field { position: relative; border-top: 1px solid var(--rule); }
     .field:last-of-type { border-bottom: 1px solid var(--rule); }
     .field input[type="text"], .field input[type="email"], .field input[type="tel"] { width: 100%; background: transparent; border: none; outline: none; padding: 1.2rem 0; font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); }
-    .field label { position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-family: 'Share Tech Mono', monospace; font-size: 0.52rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--light); pointer-events: none; transition: all 0.2s; }
-    .field input:focus ~ label, .field input:not(:placeholder-shown) ~ label { top: 0.4rem; font-size: 0.45rem; color: var(--mid); transform: none; }
+    .field label { position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-family: 'Share Tech Mono', monospace; font-size: 1.04rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--light); pointer-events: none; transition: all 0.2s; }
+    .field input:focus ~ label, .field input:not(:placeholder-shown) ~ label { top: 0.4rem; font-size: 0.9rem; color: var(--mid); transform: none; }
     .field input::placeholder { color: transparent; }
     .field.err { border-top-color: #b00; }
     .field.err label { color: #b00; }
 
     .opt-group { border-top: 1px solid var(--rule); padding: 1.1rem 0; }
     .opt-group.last { border-bottom: 1px solid var(--rule); }
-    .opt-title { display: block; font-family: 'Share Tech Mono', monospace; font-size: 0.5rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.9rem; }
+    .opt-title { display: block; font-family: 'Share Tech Mono', monospace; font-size: 1rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.9rem; }
 
     .pill-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .pill-label { cursor: pointer; }
@@ -127,7 +127,7 @@
     .chk-box { width: 13px; height: 13px; border: 1px solid var(--rule); flex-shrink: 0; position: relative; transition: all 0.14s; }
     .chk-label input:checked + .chk-box { background: var(--navy); border-color: var(--navy); }
     .chk-label input:checked + .chk-box::after { content: ''; position: absolute; left: 3px; top: 1px; width: 4px; height: 7px; border: 1px solid var(--white); border-left: none; border-top: none; transform: rotate(45deg); }
-    .chk-text { font-family: 'Barlow Condensed', sans-serif; font-size: 0.7rem; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; }
+    .chk-text { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; }
 
     .becoming-wrap { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 1rem 0; }
     .becoming-wrap textarea { width: 100%; background: transparent; border: none; outline: none; resize: none; font-family: 'Barlow', sans-serif; font-size: 0.83rem; font-weight: 300; color: var(--ink); line-height: 1.7; min-height: 64px; }
