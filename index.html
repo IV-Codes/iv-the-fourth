@@ -57,7 +57,7 @@
     .c-bl { bottom: 20px; left: 20px; transform: scaleY(-1); }
     .c-br { bottom: 20px; right: 20px; transform: scale(-1); }
 
-    .hud { position: fixed; z-index: 20; font-family: 'Share Tech Mono', monospace; font-size: 1.1rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); }
+    .hud { position: fixed; z-index: 20; font-family: 'Share Tech Mono', monospace; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); }
     .hud-tl { top: 22px; left: 36px; }
     .hud-tr { top: 22px; right: 36px; }
     .hud-bl { bottom: 22px; left: 36px; }
@@ -84,7 +84,7 @@
     .logo-wrap img { height: 88px; width: auto; display: block; margin: 0 auto; }
 
     .hero { width: 100%; max-width: 720px; text-align: center; margin-bottom: 2.6rem; }
-    .hero-label { font-family: 'Share Tech Mono', monospace; font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 1.2rem; opacity: 0; animation: fadeUp 0.7s ease 0.3s forwards; }
+    .hero-label { font-family: 'Share Tech Mono', monospace; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 1.2rem; opacity: 0; animation: fadeUp 0.7s ease 0.3s forwards; }
     .headline { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: clamp(2.8rem, 8.5vw, 7.5rem); line-height: 0.92; letter-spacing: -0.01em; text-transform: uppercase; color: var(--ink); opacity: 0; animation: fadeUp 0.8s ease 0.4s forwards; }
 
     .render-bar { width: 100%; max-width: 460px; margin: 2rem auto 0; opacity: 0; animation: fadeUp 0.7s ease 0.65s forwards; }
@@ -97,7 +97,7 @@
     .progress { display: flex; gap: 4px; margin-bottom: 2rem; }
     .progress .seg { flex: 1; height: 1px; background: var(--rule); transition: background 0.4s; }
     .progress .seg.on { background: var(--navy); }
-    .sec-label { font-family: 'Share Tech Mono', monospace; font-size: 1.04rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 1.5rem; }
+    .sec-label { font-family: 'Share Tech Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 1.5rem; }
 
     .form-page { display: none; }
     .form-page.active { display: block; animation: fadeUp 0.4s ease forwards; }
@@ -105,7 +105,7 @@
     .field { position: relative; border-top: 1px solid var(--rule); }
     .field:last-of-type { border-bottom: 1px solid var(--rule); }
     .field input[type="text"], .field input[type="email"], .field input[type="tel"] { width: 100%; background: transparent; border: none; outline: none; padding: 1.2rem 0; font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); }
-    .field label { position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-family: 'Share Tech Mono', monospace; font-size: 1.04rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--light); pointer-events: none; transition: all 0.2s; }
+    .field label { position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-family: 'Share Tech Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--light); pointer-events: none; transition: all 0.2s; }
     .field input:focus ~ label, .field input:not(:placeholder-shown) ~ label { top: 0.4rem; font-size: 0.9rem; color: var(--mid); transform: none; }
     .field input::placeholder { color: transparent; }
     .field.err { border-top-color: #b00; }
@@ -113,12 +113,12 @@
 
     .opt-group { border-top: 1px solid var(--rule); padding: 1.1rem 0; }
     .opt-group.last { border-bottom: 1px solid var(--rule); }
-    .opt-title { display: block; font-family: 'Share Tech Mono', monospace; font-size: 1rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.9rem; }
+    .opt-title { display: block; font-family: 'Share Tech Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.9rem; }
 
     .pill-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .pill-label { cursor: pointer; }
     .pill-label input { display: none; }
-    .pill { display: inline-block; padding: 0.34rem 0.82rem; border: 1px solid var(--rule); font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mid); transition: all 0.16s; cursor: pointer; }
+    .pill { display: inline-block; padding: 0.34rem 0.82rem; border: 1px solid var(--rule); font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mid); transition: all 0.16s; cursor: pointer; }
     .pill-label input:checked + .pill { border-color: var(--navy); background: var(--navy); color: var(--white); }
 
     .check-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem 1rem; }
@@ -127,7 +127,7 @@
     .chk-box { width: 13px; height: 13px; border: 1px solid var(--rule); flex-shrink: 0; position: relative; transition: all 0.14s; }
     .chk-label input:checked + .chk-box { background: var(--navy); border-color: var(--navy); }
     .chk-label input:checked + .chk-box::after { content: ''; position: absolute; left: 3px; top: 1px; width: 4px; height: 7px; border: 1px solid var(--white); border-left: none; border-top: none; transform: rotate(45deg); }
-    .chk-text { font-family: 'Barlow Condensed', sans-serif; font-size: 1.4rem; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; }
+    .chk-text { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; }
 
     .becoming-wrap { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 1rem 0; }
     .becoming-wrap textarea { width: 100%; background: transparent; border: none; outline: none; resize: none; font-family: 'Barlow', sans-serif; font-size: 0.83rem; font-weight: 300; color: var(--ink); line-height: 1.7; min-height: 64px; }
@@ -215,7 +215,7 @@
   <div class="hud hud-tl">In Progress _</div>
   <div class="hud hud-tr">001 // Waitlist</div>
   <div class="hud hud-bl">Imagine // Design // Create</div>
-  <div class="hud hud-br">© MMXXV — IV: The Fourth</div>
+  <div class="hud hud-br">© IG — IV:The4th</div>
 
   <div class="strip strip-left"><div class="strip-track" id="trackLeft"></div></div>
   <div class="strip strip-right"><div class="strip-track" id="trackRight"></div></div>
@@ -227,11 +227,11 @@
     </div>
 
     <div class="hero" id="heroBlock">
-      <p class="hero-label">Digital Rendering &nbsp;// &nbsp;Confidential</p>
+      <p class="hero-label">Drop 001 Waitlist</p>
       <h1 class="headline">For Those<br>Becoming.</h1>
       <div class="render-bar">
         <div class="render-meta">
-          <span>Drop 01 Rendering...</span>
+          <span>Drop 01 Forming...</span>
           <span id="pctLabel">0%</span>
         </div>
         <div class="bar-track"><div class="bar-fill"></div></div>
