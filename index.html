@@ -13,7 +13,7 @@
       --ink:    #0A0A0A;
       --navy:   #0D3254;
       --navy2:  #1a4a72;
-      --mid:    #6A7D8F;
+      --mid:    #2D3748;
       --light:  #A8BAC8;
       --rule:   #D8E0E8;
       --strip-w: 172px;
@@ -97,7 +97,7 @@
     .progress { display: flex; gap: 4px; margin-bottom: 2rem; }
     .progress .seg { flex: 1; height: 1px; background: var(--rule); transition: background 0.4s; }
     .progress .seg.on { background: var(--navy); }
-    .sec-label { font-family: 'Share Tech Mono', monospace; font-size: 1rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 1.5rem; }
+    .sec-label { font-family: 'Share Tech Mono', monospace; font-size: 1rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--navy); margin-bottom: 1.5rem; }
 
     .form-page { display: none; }
     .form-page.active { display: block; animation: fadeUp 0.4s ease forwards; }
@@ -105,20 +105,20 @@
     .field { position: relative; border-top: 1px solid var(--rule); }
     .field:last-of-type { border-bottom: 1px solid var(--rule); }
     .field input[type="text"], .field input[type="email"], .field input[type="tel"] { width: 100%; background: transparent; border: none; outline: none; padding: 1.2rem 0; font-family: 'Barlow Condensed', sans-serif; font-size: 0.95rem; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); }
-    .field label { position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-family: 'Share Tech Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--light); pointer-events: none; transition: all 0.2s; }
-    .field input:focus ~ label, .field input:not(:placeholder-shown) ~ label { top: 0.4rem; font-size: 0.9rem; color: var(--mid); transform: none; }
+    .field label { position: absolute; top: 50%; left: 0; transform: translateY(-50%); font-family: 'Share Tech Mono', monospace; font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); pointer-events: none; transition: all 0.2s; }
+    .field input:focus ~ label, .field input:not(:placeholder-shown) ~ label { top: 0.4rem; font-size: 0.9rem; color: var(--navy); transform: none; }
     .field input::placeholder { color: transparent; }
     .field.err { border-top-color: #b00; }
     .field.err label { color: #b00; }
 
     .opt-group { border-top: 1px solid var(--rule); padding: 1.1rem 0; }
     .opt-group.last { border-bottom: 1px solid var(--rule); }
-    .opt-title { display: block; font-family: 'Share Tech Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.9rem; }
+    .opt-title { display: block; font-family: 'Share Tech Mono', monospace; font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 0.9rem; }
 
     .pill-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .pill-label { cursor: pointer; }
     .pill-label input { display: none; }
-    .pill { display: inline-block; padding: 0.34rem 0.82rem; border: 1px solid var(--rule); font-family: 'Barlow Condensed', sans-serif; font-size: 1rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--mid); transition: all 0.16s; cursor: pointer; }
+    .pill { display: inline-block; padding: 0.34rem 0.82rem; border: 1px solid var(--rule); font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--navy); transition: all 0.16s; cursor: pointer; }
     .pill-label input:checked + .pill { border-color: var(--navy); background: var(--navy); color: var(--white); }
 
     .check-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem 1rem; }
@@ -127,7 +127,7 @@
     .chk-box { width: 13px; height: 13px; border: 1px solid var(--rule); flex-shrink: 0; position: relative; transition: all 0.14s; }
     .chk-label input:checked + .chk-box { background: var(--navy); border-color: var(--navy); }
     .chk-label input:checked + .chk-box::after { content: ''; position: absolute; left: 3px; top: 1px; width: 4px; height: 7px; border: 1px solid var(--white); border-left: none; border-top: none; transform: rotate(45deg); }
-    .chk-text { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; }
+    .chk-text { font-family: 'Barlow Condensed', sans-serif; font-size: 0.83rem; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: var(--navy); }
 
     .becoming-wrap { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: 1rem 0; }
     .becoming-wrap textarea { width: 100%; background: transparent; border: none; outline: none; resize: none; font-family: 'Barlow', sans-serif; font-size: 0.83rem; font-weight: 300; color: var(--ink); line-height: 1.7; min-height: 64px; }
@@ -138,7 +138,7 @@
     .agree-box { width: 13px; height: 13px; border: 1px solid var(--rule); flex-shrink: 0; margin-top: 2px; position: relative; transition: all 0.14s; }
     .agreement input:checked + .agree-box { background: var(--navy); border-color: var(--navy); }
     .agreement input:checked + .agree-box::after { content: ''; position: absolute; left: 3px; top: 1px; width: 4px; height: 7px; border: 1px solid var(--white); border-left: none; border-top: none; transform: rotate(45deg); }
-    .agree-text { font-family: 'Barlow', sans-serif; font-size: 0.7rem; font-weight: 300; line-height: 1.75; color: var(--mid); }
+    .agree-text { font-family: 'Barlow', sans-serif; font-size: 0.91rem; font-weight: 300; line-height: 1.75; color: var(--mid); }
     .agreement.err .agree-box { border-color: #b00; }
 
     .btn-row { display: flex; gap: 0.7rem; margin-top: 1.8rem; }
@@ -149,32 +149,14 @@
     .btn-secondary:hover { background: var(--navy); color: var(--white); }
     .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; letter-spacing: 0.24em; }
 
-    /* Submitting spinner */
-    .spinner {
-      width: 12px; height: 12px;
-      border: 1.5px solid rgba(255,255,255,0.3);
-      border-top-color: #fff;
-      border-radius: 50%;
-      animation: spin 0.7s linear infinite;
-      display: none;
-    }
+    .spinner { width: 12px; height: 12px; border: 1.5px solid rgba(255,255,255,0.3); border-top-color: #fff; border-radius: 50%; animation: spin 0.7s linear infinite; display: none; }
     .btn-primary.loading .spinner { display: block; }
     .btn-primary.loading .btn-text { display: none; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* Error toast */
-    .toast {
-      position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%);
-      background: #b00; color: #fff;
-      font-family: 'Share Tech Mono', monospace;
-      font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase;
-      padding: 0.8rem 1.4rem;
-      opacity: 0; pointer-events: none;
-      transition: opacity 0.3s; z-index: 999;
-    }
+    .toast { position: fixed; bottom: 2rem; left: 50%; transform: translateX(-50%); background: #b00; color: #fff; font-family: 'Share Tech Mono', monospace; font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 0.8rem 1.4rem; opacity: 0; pointer-events: none; transition: opacity 0.3s; z-index: 999; }
     .toast.show { opacity: 1; }
 
-    /* Success */
     #successState { display: none; text-align: center; width: 100%; max-width: 520px; }
     #successState.show { display: block; animation: fadeUp 0.7s ease forwards; }
     .suc-logo { height: 64px; width: auto; margin: 0 auto 1.6rem; display: block; }
@@ -182,7 +164,6 @@
     .suc-headline { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: clamp(2.6rem, 8vw, 5rem); line-height: 0.95; text-transform: uppercase; color: var(--navy); margin-bottom: 1.2rem; }
     .suc-sub { font-family: 'Share Tech Mono', monospace; font-size: 0.56rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--mid); line-height: 2.2; }
 
-    /* Mobile carousel */
     .mobile-carousel { display: none; width: 100%; overflow: hidden; margin-top: 3.5rem; position: relative; }
     .mobile-carousel::before, .mobile-carousel::after { content: ''; position: absolute; top: 0; bottom: 0; width: 60px; z-index: 2; pointer-events: none; }
     .mobile-carousel::before { left: 0;  background: linear-gradient(to right, var(--white), transparent); }
@@ -227,7 +208,7 @@
     </div>
 
     <div class="hero" id="heroBlock">
-      <p class="hero-label">Drop 001 Waitlist //p>
+      <p class="hero-label">Drop 001 Waitlist //</p>
       <h1 class="headline">For The<br>Ones Becoming.</h1>
       <div class="render-bar">
         <div class="render-meta">
@@ -252,7 +233,7 @@
         <div class="field" id="f-wa"><input type="tel" id="whatsapp" placeholder="x" /><label for="whatsapp">WhatsApp Number</label></div>
         <div class="field"><input type="text" id="instagram" placeholder="x" /><label for="instagram">Instagram Handle</label></div>
         <div class="opt-group last" style="margin-top:1.5rem;border-top:1px solid var(--rule);">
-          <span class="opt-title">// Gender</span>
+          <span class="opt-title">Gender</span>
           <div class="pill-row">
             <label class="pill-label"><input type="radio" name="gender" value="Male" /><span class="pill">Male</span></label>
             <label class="pill-label"><input type="radio" name="gender" value="Female" /><span class="pill">Female</span></label>
@@ -271,7 +252,7 @@
       <div class="form-page" id="page2">
         <p class="sec-label">// 02 — Your Interests</p>
         <div class="opt-group" id="g-pieces">
-          <span class="opt-title">// Which piece are you most interested in? *</span>
+          <span class="opt-title">Which piece are you most interested in? *</span>
           <div class="check-grid">
             <label class="chk-label"><input type="checkbox" name="pieces" value="Hoodies" /><span class="chk-box"></span><span class="chk-text">Hoodies</span></label>
             <label class="chk-label"><input type="checkbox" name="pieces" value="Sweatshirts" /><span class="chk-box"></span><span class="chk-text">Sweatshirts</span></label>
@@ -281,7 +262,7 @@
           </div>
         </div>
         <div class="opt-group" id="g-fit">
-          <span class="opt-title">// Preferred Fit *</span>
+          <span class="opt-title">Preferred Fit *</span>
           <div class="pill-row">
             <label class="pill-label"><input type="radio" name="fit" value="Oversized" /><span class="pill">Oversized</span></label>
             <label class="pill-label"><input type="radio" name="fit" value="Regular Fit" /><span class="pill">Regular Fit</span></label>
@@ -289,7 +270,7 @@
           </div>
         </div>
         <div class="opt-group" id="g-size">
-          <span class="opt-title">// Shirt Size *</span>
+          <span class="opt-title">Shirt Size *</span>
           <div class="pill-row">
             <label class="pill-label"><input type="radio" name="size" value="XS" /><span class="pill">XS</span></label>
             <label class="pill-label"><input type="radio" name="size" value="S" /><span class="pill">S</span></label>
@@ -301,7 +282,7 @@
           </div>
         </div>
         <div class="opt-group becoming-wrap" id="g-becoming">
-          <span class="opt-title">// What does "Becoming" mean to you? *</span>
+          <span class="opt-title">What does "Becoming" mean to you? *</span>
           <textarea id="becoming" rows="3" placeholder="Your answer..."></textarea>
         </div>
         <label class="agreement" id="agreeLabel">
@@ -324,7 +305,7 @@
       <img src="logo.png" alt="IV: The Fourth" class="suc-logo" />
       <p class="suc-label">// Access Granted</p>
       <h2 class="suc-headline">You're<br>On The List.</h2>
-      <p class="suc-sub">Drop 01 — Early Access Confirmed<br>We'll be in touch before public launch.</p>
+      <p class="suc-sub">Drop 001 — Early Access Confirmed<br>We'll be in touch before public launch.</p>
     </div>
 
     <div class="mobile-carousel">
@@ -333,10 +314,9 @@
 
   </div>
 
-  <!-- Error toast -->
   <div class="toast" id="toast">Something went wrong. Please try again.</div>
 
-  <!-- ── Firebase ── -->
+  <!-- Firebase -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
     import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -354,7 +334,6 @@
     const app = initializeApp(firebaseConfig);
     const db  = getFirestore(app);
 
-    // Expose save function to global scope
     window.saveToFirestore = async (data) => {
       await addDoc(collection(db, "waitlist"), {
         ...data,
@@ -364,7 +343,6 @@
   </script>
 
   <script>
-    /* ── Images ── */
     const IMAGES = ['img1.png','img2.png','img3.png','img4.png','img5.png','img6.png','img7.png','img8.png'];
 
     function buildStrip(id, reversed) {
@@ -390,14 +368,12 @@
     buildStrip('trackRight', true);
     buildCarousel();
 
-    /* ── % counter ── */
     let pct = 0;
     const pctEl = document.getElementById('pctLabel');
     setTimeout(() => {
       const iv = setInterval(() => { pct++; pctEl.textContent = pct + '%'; if (pct >= 74) clearInterval(iv); }, 28);
     }, 1000);
 
-    /* ── Toast ── */
     function showToast(msg) {
       const t = document.getElementById('toast');
       t.textContent = msg;
@@ -405,7 +381,6 @@
       setTimeout(() => t.classList.remove('show'), 4000);
     }
 
-    /* ── Navigation ── */
     function goPage(n) {
       document.querySelectorAll('.form-page').forEach(p => p.classList.remove('active'));
       document.getElementById('page' + n).classList.add('active');
@@ -442,7 +417,6 @@
       else document.getElementById('agreeLabel').classList.remove('err');
       if (!ok) return;
 
-      // Show loading state
       const btn = document.getElementById('submitBtn');
       btn.classList.add('loading');
       btn.disabled = true;
@@ -461,14 +435,11 @@
 
       try {
         await window.saveToFirestore(payload);
-
-        // Success
         document.getElementById('formWrap').style.display  = 'none';
         document.getElementById('heroBlock').style.display = 'none';
         document.getElementById('logoBlock').style.display = 'none';
         document.getElementById('successState').classList.add('show');
         window.scrollTo({ top: 0, behavior: 'smooth' });
-
       } catch (err) {
         console.error(err);
         btn.classList.remove('loading');
