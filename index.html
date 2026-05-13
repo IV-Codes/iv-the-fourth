@@ -117,7 +117,7 @@
     .pill-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
     .pill-label { cursor: pointer; }
     .pill-label input { display: none; }
-    .pill { display: inline-block; padding: 0.34rem 0.82rem; border: 1px solid var(--rule); font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--navy); transition: all 0.16s; cursor: pointer; }
+    .pill { display: inline-block; padding: 0.34rem 0.82rem; border: 1px solid var(--navy); font-family: 'Barlow Condensed', sans-serif; font-size: 1.3rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--navy); transition: all 0.16s; cursor: pointer; }
     .pill-label input:checked + .pill { border-color: var(--navy); background: var(--navy); color: var(--white); }
 
     .check-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem 1rem; }
@@ -383,23 +383,21 @@
 
     function updateProgress() {
       let pct = 0;
-
       if (document.getElementById('fullName').value.trim())  pct = Math.max(pct, STEPS.fullName);
       if (document.getElementById('email').value.trim())     pct = Math.max(pct, STEPS.email);
       if (document.getElementById('whatsapp').value.trim())  pct = Math.max(pct, STEPS.whatsapp);
       if (document.getElementById('instagram').value.trim()) pct = Math.max(pct, STEPS.instagram);
-      if (document.querySelector('input[name="gender"]:checked'))  pct = Math.max(pct, STEPS.gender);
-      if ([...document.querySelectorAll('input[name="pieces"]:checked')].length) pct = Math.max(pct, STEPS.pieces);
-      if (document.querySelector('input[name="fit"]:checked'))    pct = Math.max(pct, STEPS.fit);
-      if (document.querySelector('input[name="size"]:checked'))   pct = Math.max(pct, STEPS.size);
-      if (document.getElementById('becoming').value.trim())       pct = Math.max(pct, STEPS.becoming);
-      if (document.getElementById('agreement').checked)           pct = Math.max(pct, STEPS.agreement);
+      if (document.querySelector('input[name="gender"]:checked'))                          pct = Math.max(pct, STEPS.gender);
+      if ([...document.querySelectorAll('input[name="pieces"]:checked')].length)           pct = Math.max(pct, STEPS.pieces);
+      if (document.querySelector('input[name="fit"]:checked'))                             pct = Math.max(pct, STEPS.fit);
+      if (document.querySelector('input[name="size"]:checked'))                            pct = Math.max(pct, STEPS.size);
+      if (document.getElementById('becoming').value.trim())                                pct = Math.max(pct, STEPS.becoming);
+      if (document.getElementById('agreement').checked)                                    pct = Math.max(pct, STEPS.agreement);
 
       document.getElementById('barFill').style.width = pct + '%';
       document.getElementById('pctLabel').textContent = pct + '%';
     }
 
-    // Attach listeners after DOM ready
     document.addEventListener('DOMContentLoaded', () => {
       ['fullName','email','whatsapp','instagram','becoming'].forEach(id => {
         document.getElementById(id).addEventListener('input', updateProgress);
